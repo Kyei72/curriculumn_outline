@@ -1,3 +1,4 @@
+/* --- Global Styles --- */
 * {
   margin: 0;
   padding: 0;
@@ -12,26 +13,33 @@ body {
   padding: 40px 20px;
 }
 
-#Hero-title {
+/* --- Header / Hero --- */
+header {
   text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
+}
+
+#Hero-title {
+  font-size: 2.8rem;
   color: #0a0a23;
+  margin-bottom: 10px;
 }
 
 #sub-hero {
-  text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 400;
   color: #2f2f5f;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
-body > p {
-  text-align: center;
-  font-size: 1rem;
+header p {
+  font-size: 1.1rem;
   color: #555;
-  margin-bottom: 40px;
+}
+
+/* --- Courses Section --- */
+.courses {
+  margin-bottom: 50px;
 }
 
 .course-1,
@@ -40,27 +48,161 @@ body > p {
   background-color: #ffffff;
   max-width: 600px;
   margin: 20px auto;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease;
 }
 
 .course-1:hover,
 .course-2:hover,
 .course-3:hover {
-  transform: translateY(-5px);
-  background-color: burlywood;
-  box-shadow: 0 12px 25px rgba(1, 194, 253, 0.12);
+  transform: translateY(-7px);
+  background-color: #ffe4b5; /* softer than burlywood */
+  box-shadow: 0 15px 30px rgba(1, 194, 253, 0.15);
 }
 
 .Topic {
-  font-size: 1.3rem;
-  margin-bottom: 10px;
+  font-size: 1.4rem;
+  margin-bottom: 8px;
   color: #0a0a23;
 }
 
 .explanation {
   font-size: 1rem;
   color: #555;
+  line-height: 1.5;
+}
+
+/* --- Register CTA Section --- */
+.register-cta {
+  text-align: center;
+  margin: 50px auto;
+  padding: 35px 25px;
+  background-color: #fff;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.register-cta h3 {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+}
+
+.register-cta p {
+  font-size: 1.05rem;
+  margin-bottom: 25px;
+  color: #555;
+}
+
+.btn-register {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #0a0a23;
+  color: #fff;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-register:hover {
+  background-color: #2f2f5f;
+  transform: translateY(-3px);
+}
+
+/* --- Student Form Page --- */
+.student-form {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 35px 25px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.student-form h2 {
+  text-align: center;
+  color: #0a0a23;
+  margin-bottom: 15px;
+}
+
+.student-form input,
+.student-form select,
+.student-form button {
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.student-form input:focus,
+.student-form select:focus {
+  outline: none;
+  border-color: #0a0a23;
+  box-shadow: 0 0 5px rgba(10, 10, 35, 0.3);
+}
+
+.student-form button {
+  background-color: #0a0a23;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.student-form button:hover {
+  background-color: #2f2f5f;
+  transform: translateY(-2px);
+}
+
+/* --- Back Home Button --- */
+.back-home {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.btn-back {
+  text-decoration: none;
+  background-color: #555;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-back:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+}
+
+/* --- Responsive --- */
+@media (max-width: 480px) {
+  #Hero-title {
+    font-size: 2rem;
+  }
+
+  #sub-hero {
+    font-size: 1.3rem;
+  }
+
+  .course-1,
+  .course-2,
+  .course-3,
+  .register-cta,
+  .student-form {
+    padding: 20px;
+    margin: 15px;
+  }
+
+  .btn-register,
+  .btn-back {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
 }

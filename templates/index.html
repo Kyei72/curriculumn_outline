@@ -3,26 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bernard Curriculumn</title>
+    <title>Bernard Curriculum</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
   </head>
   <body>
-    <h1 id="Hero-title">Welcome to freeCodeCamp</h1>
-    <h2 id="sub-hero">Full Stack Curriculumn</h2>
-    <p>Learn the skills to become a full stack developer</p>
-    <div class="course-1">
-      <h3 class="Topic">Introduction to HTML</h3>
-      <p class="explanation">
-        HTML represents the content and structure of a webpage
-      </p>
-    </div>
-    <div class="course-2">
-      <h3 class="Topic">Introduction to CSS</h3>
-      <p class="explanation">CSS is used to style a webpage</p>
-    </div>
-    <div class="course-3">
-      <h3 class="Topic">Introduction to JavaScript</h3>
-      <p class="explanation">JavaScript adds interactivity to a webpage</p>
-    </div>
+    <header>
+      <h1 id="Hero-title">Welcome to freeCodeCamp</h1>
+      <h2 id="sub-hero">Full Stack Curriculum</h2>
+      <p>Learn the skills to become a full stack developer</p>
+    </header>
+
+    <section class="courses">
+      <div class="course-1">
+        <h3 class="Topic">Introduction to HTML</h3>
+        <p class="explanation">HTML represents the content and structure of a webpage</p>
+      </div>
+      <div class="course-2">
+        <h3 class="Topic">Introduction to CSS</h3>
+        <p class="explanation">CSS is used to style a webpage</p>
+      </div>
+      <div class="course-3">
+        <h3 class="Topic">Introduction to JavaScript</h3>
+        <p class="explanation">JavaScript adds interactivity to a webpage</p>
+      </div>
+    </section>
+
+    <section class="register-cta">
+      <h3>Ready to join?</h3>
+      <p>Click below to register a student for our program</p>
+      <a href="{{ url_for('register') }}" class="btn-register">Register Student</a>
+    </section>
   </body>
 </html>
