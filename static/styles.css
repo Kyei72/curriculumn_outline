@@ -1,10 +1,8 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 
 body {
   background-color: #f4f6f8;
@@ -13,7 +11,6 @@ body {
   line-height: 1.6;
   padding: 40px 20px;
 }
-
 
 #Hero-title {
   text-align: center;
@@ -37,7 +34,6 @@ body > p {
   margin-bottom: 40px;
 }
 
-
 .course-1,
 .course-2,
 .course-3 {
@@ -50,21 +46,19 @@ body > p {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-
 .course-1:hover,
 .course-2:hover,
 .course-3:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+  background-color: burlywood;
+  box-shadow: 0 12px 25px rgba(1, 194, 253, 0.12);
 }
-
 
 .Topic {
   font-size: 1.3rem;
   margin-bottom: 10px;
   color: #0a0a23;
 }
-
 
 .explanation {
   font-size: 1rem;
