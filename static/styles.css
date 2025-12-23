@@ -1,0 +1,72 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: #f4f6f8;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  padding: 40px 20px;
+}
+
+
+#Hero-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #0a0a23;
+}
+
+#sub-hero {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #2f2f5f;
+  margin-bottom: 10px;
+}
+
+body > p {
+  text-align: center;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+
+.course-1,
+.course-2,
+.course-3 {
+  background-color: #ffffff;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.course-1:hover,
+.course-2:hover,
+.course-3:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+.Topic {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #0a0a23;
+}
+
+
+.explanation {
+  font-size: 1rem;
+  color: #555;
+}
